@@ -26,6 +26,7 @@ typedef struct		s_room
 	int				y;
 	int				no_ants;
 	t_link			*links;
+	t_room			*next;
 }					t_room;
 
 typedef struct		s_env
