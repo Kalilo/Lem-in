@@ -39,7 +39,7 @@ typedef struct		s_room
 typedef struct		s_env
 {
 	int				no_ants;
-	int				no_roooms;
+	int				no_rooms;
 	t_room			*start;
 }					t_env;
 
