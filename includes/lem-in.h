@@ -59,6 +59,13 @@ int					add_room_link(t_link **l, int room);
 int					add_room(t_room **l, int room);
 
 /*
+**			file: link_count.c
+*/
+
+int					count_room(t_room *room);
+int					count_link(t_link *link);
+
+/*
 **			file: link_del.c
 */
 
