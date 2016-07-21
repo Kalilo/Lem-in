@@ -40,4 +40,28 @@ typedef struct		s_env
 **Prototypes
 */
 
+/*
+**			file: lem-in.c
+*/
+
+/*
+**			file: link_add.c
+*/
+
+int					add_room_link(t_link **l, int room);
+int					add_room(t_room **l, int room);
+
+/*
+**			file: link_del.c
+*/
+
+int					del_room_list(t_room *room);
+int					del_link_list(t_link *link);
+int					del_room(t_room *room, t_room *previous);
+int					del_link(t_link *link, t_link *previous);
+/*
+**Notes:
+**		Work in progress...
+*/
+
 #endif
