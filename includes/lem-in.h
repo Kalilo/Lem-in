@@ -59,6 +59,7 @@ int					del_room_list(t_room *room);
 int					del_link_list(t_link *link);
 int					del_room(t_room *room, t_room *previous);
 int					del_link(t_link *link, t_link *previous);
+
 /*
 **Notes:
 **		Work in progress...
