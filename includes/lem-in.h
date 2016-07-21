@@ -61,6 +61,15 @@ int					del_room(t_room *room, t_room *previous);
 int					del_link(t_link *link, t_link *previous);
 
 /*
+**			file: link_scan.c
+*/
+
+int					is_in_list_room(t_room *rooms, int room);
+int					is_in_list_link(t_link *link, int room);
+t_room				find_room(t_room *rooms, int room);
+t_link				find_link(t_link *link, int room);
+
+/*
 **Notes:
 **		Work in progress...
 */
