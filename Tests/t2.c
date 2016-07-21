@@ -6,7 +6,7 @@
 /*   By: khansman <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/19 11:37:11 by khansman          #+#    #+#             */
-/*   Updated: 2016/07/19 12:00:11 by khansman         ###   ########.fr       */
+/*   Updated: 2016/07/20 15:05:05 by ehansman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ int	main(void)
 	sleep(1);
 	while (k++ < 12)
 		write(1, "\b \b", 3);
-//	write(1, "Nothing here.\n", 14);
+	write(1, "Nothing here.\n", 14);
 }
