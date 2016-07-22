@@ -58,6 +58,13 @@ typedef struct		s_env
 */
 
 /*
+**			file: debug.c
+*/
+
+void				print_rooms(t_room *room);
+void				print_links(t_link *link);
+
+/*
 **			file: find_path.c
 */
 
