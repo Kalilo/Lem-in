@@ -109,6 +109,12 @@ t_room				find_room(t_room *rooms, int room);
 t_link				find_link(t_link *link, int room);
 
 /*
+**			file: print_strings.c
+*/
+
+void				print_strings(char *colour, char *str);
+
+/*
 **Notes:
 **		Work in progress...
 **
