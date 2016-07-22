@@ -58,6 +58,14 @@ typedef struct		s_env
 */
 
 /*
+**			file: find_path.c
+*/
+
+int					check_option(t_env *env, t_list *path);
+int					scan_paths(t_env *env, t_list *path);
+int					*find_path(t_env *env);
+
+/*
 **			file: lem-in.c
 */
 
