@@ -114,7 +114,6 @@ t_link				find_link(t_link *link, int room);
 **
 ** >>> TO_DO <<<
 Lee:
-->	path finding alg
 
 Cam:
 ->	Display
@@ -126,7 +125,8 @@ E:
 ** >>> DONE <<<
 
 Lee:
-
+	path finding functions.
+	debug functions for both linked lists;
 Cam:
 
 E:
