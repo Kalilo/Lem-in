@@ -112,7 +112,7 @@ t_link				find_link(t_link *link, int room);
 **			file: print_strings.c
 */
 
-void				print_strings(char *colour, char *str);
+void				print_strings(char *colour, char *str, int unprint);
 
 /*
 **Notes:
