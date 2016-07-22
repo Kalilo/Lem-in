@@ -49,6 +49,8 @@ typedef struct		s_env
 	int				no_ants;
 	int				no_rooms;
 	t_room			*start;
+	int				end_room;
+	t_list			path;
 }					t_env;
 
 /*
