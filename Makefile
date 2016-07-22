@@ -70,7 +70,7 @@ clean:
 fclean: clean
 	@rm -f $(NAME)
 	@make fclean -C libft/
-	@$(call colorecho, "The executables ./Lem-in and " \
+	@$(call colorecho, "The executables ./lem-in and " \
 		"./libft has been removed")
 	@rm -f $(INCL:.h=.h.gch)
 
