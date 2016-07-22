@@ -65,8 +65,8 @@ typedef struct		s_env
 **			file: link_add.c
 */
 
-int					add_room_link(t_link **l, int room);
-int					add_room(t_room **l, int room);
+int					add_room_link(t_link *l, int room);
+int					add_room(t_room *l, int room);
 
 /*
 **			file: link_count.c
