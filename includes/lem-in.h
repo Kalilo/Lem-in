@@ -11,6 +11,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+# include "libft.h"
 
 /*
 **Defines
@@ -107,6 +108,7 @@ int					is_in_list_room(t_room *rooms, int room);
 int					is_in_list_link(t_link *link, int room);
 t_room				find_room(t_room *rooms, int room);
 t_link				find_link(t_link *link, int room);
+int					find_next_link_room(t_link *link, int room);
 
 /*
 **			file: print_strings.c
