@@ -74,6 +74,13 @@ int					scan_paths(t_env *env, t_list *path);
 int					*find_path(t_env *env);
 
 /*
+**			file: get_line.c
+*/
+
+char				*re_malloc(char *line, size_t size);
+int					get_line(int fd, char **line);
+
+/*
 **			file: lem-in.c
 */
 
