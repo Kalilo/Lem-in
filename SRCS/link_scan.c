@@ -35,3 +35,17 @@ t_link	find_link(t_link *link, int room)
 		return (link);
 	return (NULL);
 }
+
+int		find_next_link_room(t_link *link, int room)
+{
+	if (link == NULL)
+		return (room);
+	while (link->room != room && link->next != NULL)
+		link = link->next;
+	if (link->next != NULL)
+	{
+		link = link->next;
+		return (link->room);
+	}
+	return (room);
+}

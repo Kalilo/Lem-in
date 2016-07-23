@@ -35,3 +35,5 @@
 #Other
 *.swp
 .*DS*
+*.VC.*
+*.json

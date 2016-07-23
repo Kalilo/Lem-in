@@ -1,5 +1,5 @@
-#ifndef LEM-IN_H
-# define LEM-IN_H
+#ifndef LEM_IN_H
+# define LEM_IN_H
 
 /*
 **Includes
@@ -11,6 +11,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+# include "libft.h"
 
 /*
 **Defines
@@ -58,6 +59,36 @@ typedef struct		s_env
 */
 
 /*
+**			file: data_types.c
+*/
+
+int					is_link(char *line);
+int					is_room(char *line);
+int					data_type(char *line);
+
+/*
+**			file: debug.c
+*/
+
+void				print_rooms(t_room *room);
+void				print_links(t_link *link);
+
+/*
+**			file: find_path.c
+*/
+
+int					check_option(t_env *env, t_list *path);
+int					scan_paths(t_env *env, t_list *path);
+int					*find_path(t_env *env);
+
+/*
+**			file: get_line.c
+*/
+
+char				*re_malloc(char *line, size_t size);
+int					get_line(int fd, char **line);
+
+/*
 **			file: lem-in.c
 */
 
@@ -65,8 +96,8 @@ typedef struct		s_env
 **			file: link_add.c
 */
 
-int					add_room_link(t_link **l, int room);
-int					add_room(t_room **l, int room);
+int					add_room_link(t_link *l, int room);
+int					add_room(t_room *l, int room);
 
 /*
 **			file: link_count.c
@@ -92,6 +123,13 @@ int					is_in_list_room(t_room *rooms, int room);
 int					is_in_list_link(t_link *link, int room);
 t_room				find_room(t_room *rooms, int room);
 t_link				find_link(t_link *link, int room);
+int					find_next_link_room(t_link *link, int room);
+
+/*
+**			file: print_strings.c
+*/
+
+void				print_strings(char *colour, char *str, int unprint);
 
 /*
 **Notes:
@@ -99,7 +137,6 @@ t_link				find_link(t_link *link, int room);
 **
 ** >>> TO_DO <<<
 Lee:
-->	path finding alg
 
 Cam:
 ->	Display
@@ -111,6 +148,8 @@ E:
 ** >>> DONE <<<
 
 Lee:
+	path finding functions.
+	debug functions for both linked lists;
 
 Cam:
 
