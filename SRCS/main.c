@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <time.h>
 
+
 void	clear(int n)
 {
 	int		i;
@@ -41,7 +42,7 @@ void	welcome(void)
 	sleep(2);
 	clear(26);
 	sleep(1);
-	write(1, "\e[1mBoldLEM-IN", 11);
+	write(1, "\e[1mLEM-IN", 11);
 	sleep(2);
 	clear(6);
 }
@@ -49,11 +50,11 @@ void	welcome(void)
 int		main(void)
 {
 	int		i;
-	//	t_env	data;
+//		t_env	data;
 
 	i = 1;
 	welcome();
-	/*	data = get_data();
+/*		data = get_data();
 		while (1)
 		{
 		if (read_input(data) != 0)
