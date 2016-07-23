@@ -59,6 +59,14 @@ typedef struct		s_env
 */
 
 /*
+**			file: data_types.c
+*/
+
+int					is_link(char *line);
+int					is_room(char *line);
+int					data_type(char *line);
+
+/*
 **			file: debug.c
 */
 
